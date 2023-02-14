@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  dev-ngapp:
+    build: .
+    container_name: dev-ngapp
+    volumes:
+      - .:/app
+    ports:
+      - "4200:4200"
